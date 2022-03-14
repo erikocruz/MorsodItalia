@@ -11,7 +11,7 @@ namespace MorsodItalia.BL
         Contexto _contexto;
         public List<Orden> ListadeOrdenes { get; set; }
 
-        public OrdenesBL()
+        public OrdenesBL() 
         {
             _contexto = new Contexto();
             ListadeOrdenes = new List<Orden>(); 
