@@ -18,7 +18,7 @@ namespace MorsodItalia.BL
         public Orden()
         {
             Activo = true;
-            Fecha = DateTime.Now;
+            Fecha = DateTime.Now; 
 
             ListadeOrdenDetalle = new List<OrdenDetalle>();
         }
