@@ -13,7 +13,6 @@ namespace MorsodItalia.BL
         public Contexto() : base(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDBFilename=" +
         Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\MorsodItaliaDB.mdf")
         {
-
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

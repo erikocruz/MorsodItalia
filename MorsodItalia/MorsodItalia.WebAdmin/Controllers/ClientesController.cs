@@ -7,7 +7,6 @@ using System.Web.Mvc;
 
 namespace MorsodItalia.WebAdmin.Controllers
 {
-    [Authorize]
     public class ClientesController : Controller
     {
         ClientesBL _clientesBL;

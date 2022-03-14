@@ -8,7 +8,6 @@ using System.Web.Security;
 
 namespace MorsodItalia.WebAdmin.Controllers
 {
-    [Authorize]
     public class OrdenesController : Controller
     {
         OrdenesBL _ordenesBL;
@@ -69,7 +68,7 @@ namespace MorsodItalia.WebAdmin.Controllers
             ViewBag.ClienteId = new SelectList(clientes, "Id", "Nombre", orden.ClienteId);
 
             return View(orden);
-        }
+        } 
 
         [HttpPost]
         public ActionResult Editar(Orden orden)
