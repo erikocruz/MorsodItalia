@@ -66,7 +66,6 @@ namespace MorsodItalia.WebAdmin.Controllers
             var clientes = _clientesBL.ObtenerClientesActivos();
 
             ViewBag.ClienteId = new SelectList(clientes, "Id", "Nombre", orden.ClienteId);
-
             return View(orden);
         } 
 
