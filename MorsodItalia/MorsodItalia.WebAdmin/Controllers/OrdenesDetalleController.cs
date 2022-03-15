@@ -34,6 +34,7 @@ namespace MorsodItalia.WebAdmin.Controllers
             nuevaOrdenDetalle.OrdenId = id;
 
             var productos = _productosBL.ObtenerProductosActivos();
+
             ViewBag.ProductoId = new SelectList(productos, "Id", "Descripcion");
 
             return View(nuevaOrdenDetalle);
