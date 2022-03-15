@@ -51,6 +51,7 @@ namespace MorsodItalia.BL
             return orden;
         }
 
+
         public void GuardarOrden(Orden orden)
         {
             if (orden.Id == 0)
@@ -64,7 +65,7 @@ namespace MorsodItalia.BL
                 ordenExistente.Activo = orden.Activo;
             }
 
-            _contexto.SaveChanges();
+            _contexto.SaveChanges(); 
         }
 
         public void GuardarOrdenDetalle(OrdenDetalle ordenDetalle)

@@ -24,7 +24,7 @@ namespace MorsodItalia.WebAdmin.Controllers
         {
             var listadeOrdenes = _ordenesBL.ObtenerOrdenes();
 
-            return View(listadeOrdenes);
+            return View(listadeOrdenes); 
         }
 
         public ActionResult Crear()
@@ -45,7 +45,7 @@ namespace MorsodItalia.WebAdmin.Controllers
                 if (orden.ClienteId == 0)
                 {
                     ModelState.AddModelError("ClienteId", "Seleccione un cliente");
-                    return View(orden);
+                    return View(orden); 
                 }
 
                 _ordenesBL.GuardarOrden(orden);
