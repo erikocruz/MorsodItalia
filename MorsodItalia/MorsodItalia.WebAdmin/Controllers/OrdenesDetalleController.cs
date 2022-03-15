@@ -61,7 +61,6 @@ namespace MorsodItalia.WebAdmin.Controllers
             return View(ordenDetalle);
         }
 
-
         public ActionResult Eliminar(int id)
         {
             var ordenDetalle = _ordenBL.ObtenerOrdenDetallePorId(id);
