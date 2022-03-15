@@ -82,7 +82,6 @@ namespace MorsodItalia.BL
             orden.Total = orden.Total + ordenDetalle.Total;
 
             _contexto.SaveChanges();
-
         }
 
         public void EliminarOrdenDetalle(int id)
