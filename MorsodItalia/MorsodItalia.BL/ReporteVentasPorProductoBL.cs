@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MorsodItalia.BL
 {
-    public class ReportedeVentasPorProductoBL
+    public class ReporteVentasPorProductoBL
     {
         Contexto _contexto;
         public List<ReporteVentasPorProducto> ListadeVentasPorProducto { get; set; }
 
-        public ReportedeVentasPorProductoBL()
+        public ReporteVentasPorProductoBL()
         {
             _contexto = new Contexto();
             ListadeVentasPorProducto = new List<ReporteVentasPorProducto>();
