@@ -28,6 +28,7 @@ namespace MorsodItalia.BL
             return ListadeProductos;
         }
 
+
         public List<Producto> ObtenerProductosActivos()
         {
             ListadeProductos = _contexto.Productos
@@ -53,6 +54,7 @@ namespace MorsodItalia.BL
                 productoExistente.CategoriaId = producto.CategoriaId;
                 productoExistente.Precio = producto.Precio;
                 productoExistente.UrlImagen = producto.UrlImagen;
+                productoExistente.Activo = producto.Activo;
             }
 
             _contexto.SaveChanges();
