@@ -17,7 +17,6 @@ namespace MorsodItalia.WebAdmin.Controllers
             _seguridadBL = new SeguridadBL();
         }
 
-
         // GET: Login
         public ActionResult Index()
         {
