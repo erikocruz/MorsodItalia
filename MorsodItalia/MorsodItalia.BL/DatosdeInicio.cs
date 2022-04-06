@@ -18,7 +18,7 @@ namespace MorsodItalia.BL
 
             contexto.Usuarios.Add(nuevoUsuario);
 
-            base.Seed(contexto); 
+            base.Seed(contexto);
         }
     }
 }
