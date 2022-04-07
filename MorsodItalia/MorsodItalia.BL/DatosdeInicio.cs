@@ -30,7 +30,7 @@ namespace MorsodItalia.BL
             var Usuario3 = new Usuario();
             Usuario3.Nombre = "josem";
             Usuario3.Contrasena = Encriptar.CodificarContrasena("012");
-            contexto.Usuarios.Add(Usuario2);
+            contexto.Usuarios.Add(Usuario3);
 
             var Usuario4 = new Usuario();
             Usuario4.Nombre = "manuels";
